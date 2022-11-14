@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: linear-gradient(to right, #dfabc5 0%,
+    #1da1f2 100%);
+}
+.container{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    position: relative;
+    border: 2px solid #f7479f ;
+}
+
+#logo {
+    position: absolute;
+    width: 100px;
+    left: 70%;
+    top: 1px;
+    border-radius: 50%;
+    border: 5px solid  #f7479f;
+    
+}
+
+.container form .title{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+.container form .title::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    bottom: 2px;
+    left: 0;
+    border-radius: 5px;
+    background: #1da1f2;
+
+}
+
+.container form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.container form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+.container form .underline::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    right: 0;
+}
+
+.container form .underline::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+    background: red;    
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: all 0.4s ease;
+}
+
+.container form .button{
+    margin: 40px 0 20px 0;
+}
+
+.container form .input-box #submit{
+    font-size: 17px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background: red;
+    transition: all 0.5s ease;
+
+}
+
+.container form .input-box #submit:hover{
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.10);
+    font-weight: 600;
+    
+}
+
+.container .text{
+    font-size: 16px;
+    text-align: center;
+}
+
+.container .github a,
+.container .twitter a,
+.container .facebook a{
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 15px;
+}
+
+.container .github a{
+    background-color: #161b22;
+    margin: 20px 0 15px 0;
+   
+}
+.container .github a:hover{
+    background-color: #516074;
+    margin: 20px 0 15px 0;
+}
+
+.container .twitter a{
+    background: #00acee;
+    margin: 20px 0 15px 0;
+}
+
+.container .twitter a:hover{
+    background: #adcedb;
+    margin: 20px 0 15px 0;
+}
+
+.container .facebook a{
+    background: #3b5998;
+    margin: 20px 0 15px 0;
+}
+
+.container .facebook a:hover{
+    background: #89a2d8;
+    margin: 20px 0 15px 0;
+}
+
+.container .github i,
+.container .twitter i,
+.container .facebook i{
+    font-size: 22px;
+    padding-right: 10px;
+}
+.berkay{
+    font-size: 22px;
+    text-align: center;
+    padding: 2px;
+    background-color:#030303;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.berkay1 a i{
+    display: inline-block;
+    padding: 20px 0 10px 15px;
+    text-decoration: none;
+    letter-spacing: 15px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.berkay1 a i:hover{
+    color: #7f6a94;
+}
+
+/* Yorucuydu Ama Güzel Olduuu*/
